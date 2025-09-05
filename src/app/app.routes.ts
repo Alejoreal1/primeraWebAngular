@@ -8,6 +8,7 @@ import { Contactos } from './contactos/contactos';
 import { Seccion1 } from './seccion1/seccion1';
 import { Seccion2 } from './seccion2/seccion2';
 import { Politicas } from './politicas/politicas';
+import { Nft } from './nft/nft';
 
 export const routes: Routes = [
     {path: '', component: Home },
@@ -19,5 +20,6 @@ export const routes: Routes = [
     {path:'seccion1',component:Seccion1},
     {path:'seccion2',component:Seccion2},
     {path:'politicas',component:Politicas},
+    {path:'nft',component:Nft},
     {path: '**', redirectTo: '/home' } 
 ];  
