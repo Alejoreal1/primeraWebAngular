@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Fondo gris de la cabecera */
+.header {
+  background-color: #d9d9d9; /* gris */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+    
+}
+
+/* Contenedor blanco del nav */
+.nav {
+  background-color: #ffffff;
+  border: 1px solid #999;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+
+}
+/* Lista horizontal */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* separación entre enlaces */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de enlaces */
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff0000;
+  
+}

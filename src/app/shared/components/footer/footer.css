@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-around; /* distribuye los links en el espacio */
+  align-items: center;
+width: 100%;
+  padding: 15px;
+  background-color: #fff; 
+    box-shadow: 0 -2px 5px rgba(223, 0, 0, 0.1);
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  color: #1e90ff;
+}

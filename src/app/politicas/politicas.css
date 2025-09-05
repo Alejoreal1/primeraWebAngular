@@ -1,0 +1,67 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Contenedor principal de la política */
+.politica-privacidad {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los títulos */
+.politica-privacidad h1 {
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.politica-privacidad h2 {
+    font-size: 1.8em;
+    color: #c50b1b;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Estilos de los párrafos y listas */
+.politica-privacidad p {
+    margin-bottom: 15px;
+}
+
+.politica-privacidad ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.politica-privacidad li {
+    margin-bottom: 8px;
+}
+
+.politica-privacidad li strong {
+    color: #00050a;
+}
+
+/* Estilo para la fecha de actualización */
+.politica-privacidad em {
+    display: block;
+    text-align: right;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+/* Estilos para secciones */
+.politica-privacidad section {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,94 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* toda la pantalla */
+  font-family: Arial, sans-serif;
+  background: #f0f0f0; /* gris claro de fondo */
+}
+#titulo:hover{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+/* Caja de login */
+.login-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-box label {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.login-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #ff1818;
+}
+
+/* Botón */
+.login-box button {
+  background: #222;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background: #000;
+}
+
+/* Enlace */
+.login-box a {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+.login-box a:hover{
+    color:red
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+  
+}

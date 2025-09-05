@@ -1,0 +1,168 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid; 
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 40px; 
+    
+}
+
+/* Para pantallas más grandes, dos columnas */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+    }
+}
+
+
+/* Estilos para la Sección de Información General */
+#informacion-general {
+    padding: 20px;
+    border-right: 1px solid #eee; /* Separador visual */
+}
+
+#informacion-general h2 {
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contacto-item {
+    margin-bottom: 20px;
+}
+
+.contacto-item h3 {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.contacto-item p {
+    margin: 0;
+}
+
+.contacto-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contacto-item a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la Sección de Formulario y Consultas */
+#formulario-consultas {
+    padding: 20px;
+}
+
+#formulario-consultas h2 {
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y border en el width */
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.consultas-especificas {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.consultas-especificas h3 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.consultas-especificas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.consultas-especificas ul li {
+    margin-bottom: 8px;
+}
+
+.consultas-especificas ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.consultas-especificas ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
