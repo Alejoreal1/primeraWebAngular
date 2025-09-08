@@ -10,5 +10,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './nosotros.css'
 })
 export class Nosotros {
+  protected  readonly contactos=("CONTÁCTANOS");
+  protected readonly info=("Si deseas más información sobre el museo o colaborar con nosotros:")
+
 
 }
