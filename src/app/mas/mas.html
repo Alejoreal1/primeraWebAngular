@@ -1,5 +1,5 @@
 <app-nav></app-nav>
-
+<main>
 <button class="cambiar-btn" (click)="changeCategory()">
   {{ currentIndex === 0 ? 'Ver Detalles' : 'Siguiente' }}
 </button>
@@ -50,5 +50,5 @@
     <p class="aviso" [ngClass]="{ 'aviso-oculto': !mostrarInfo }">🔒 La información está oculta. Actívala para explorar más sobre el arte digital.</p>
   }
 </section>
-
+</main>
 <app-footer></app-footer>
