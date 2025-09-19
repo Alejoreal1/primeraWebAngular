@@ -1,16 +1,17 @@
 <app-nav></app-nav>
 <main>
-<button class="cambiar-btn" (click)="changeCategory()">
-  {{ currentIndex === 0 ? 'Ver Detalles' : 'Siguiente' }}
-</button>
+
 
 <section class="info-arte" [ngClass]="{
   'historia-activa': categoria === 'historia',
   'tecnicas-activa': categoria === 'tecnicas',
   'artistas-activa': categoria === 'artistas'
 }">
+<button class="cambiar-btn" (click)="changeCategory()">
+  {{ currentIndex === 0 ? 'presioname para más info' : 'Siguiente' }}
+</button>
   @if (mostrarInfo) {
-    <h2 [ngStyle]="{ 'color': categoria === 'historia' ? '#007bff' : (categoria === 'tecnicas' ? '#28a745' : (categoria === 'artistas' ? '#6f42c1' : '#343a40')) }">
+    <h2 [ngStyle]="{ 'color': categoria === 'historia' ? '#007bff' : (categoria === 'tecnicas' ? '#28a744' : (categoria === 'artistas' ? '#6f42c1' : '#343a40')) }">
       Más Información sobre Arte Digital
     </h2>
     @switch (categoria) {
@@ -49,6 +50,7 @@
   } @else {
     <p class="aviso" [ngClass]="{ 'aviso-oculto': !mostrarInfo }">🔒 La información está oculta. Actívala para explorar más sobre el arte digital.</p>
   }
+
 </section>
 </main>
 <app-footer></app-footer>

@@ -10,6 +10,7 @@ html, body ,main{
   color: #333;
 }
 
+
 /* Estilos de la sección principal */
 .info-arte {
   min-height: calc(100vh - 120px); 
@@ -116,4 +117,7 @@ html, body ,main{
   color: #555;
   padding: 0 10px 15px;
   margin: 0;
+}
+.cambiar-btn{
+
 }
