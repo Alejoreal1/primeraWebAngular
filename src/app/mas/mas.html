@@ -1,0 +1,54 @@
+<app-nav></app-nav>
+
+<button class="cambiar-btn" (click)="changeCategory()">
+  {{ currentIndex === 0 ? 'Ver Detalles' : 'Siguiente' }}
+</button>
+
+<section class="info-arte" [ngClass]="{
+  'historia-activa': categoria === 'historia',
+  'tecnicas-activa': categoria === 'tecnicas',
+  'artistas-activa': categoria === 'artistas'
+}">
+  @if (mostrarInfo) {
+    <h2 [ngStyle]="{ 'color': categoria === 'historia' ? '#007bff' : (categoria === 'tecnicas' ? '#28a745' : (categoria === 'artistas' ? '#6f42c1' : '#343a40')) }">
+      Más Información sobre Arte Digital
+    </h2>
+    @switch (categoria) {
+      @case ('historia') {
+        <p>
+          El arte digital surge en la segunda mitad del siglo XX y ha evolucionado con la llegada
+          de nuevas tecnologías como la inteligencia artificial, realidad aumentada y NFTs.
+        </p>
+      }
+      @case ('tecnicas') {
+        <p>
+          Entre las técnicas más usadas están: ilustración digital, modelado 3D, animación,
+          arte generativo y colecciones NFT.
+        </p>
+      }
+      @case ('artistas') {
+        <p>
+          Muchos artistas contemporáneos utilizan el arte digital para crear obras interactivas,
+          inmersivas y únicas en blockchain.
+        </p>
+      }
+      @default {
+        <p>Selecciona una categoría para ver más detalles.</p>
+      }
+    }
+
+    <div class="grid-obras">
+      @for (obra of obras; track obra.titulo) {
+        <div class="obra-card">
+          <img [src]="obra.imagen" [alt]="obra.titulo">
+          <h3>{{ obra.titulo }}</h3>
+          <p>{{ obra.descripcion }}</p>
+        </div>
+      }
+    </div>
+  } @else {
+    <p class="aviso" [ngClass]="{ 'aviso-oculto': !mostrarInfo }">🔒 La información está oculta. Actívala para explorar más sobre el arte digital.</p>
+  }
+</section>
+
+<app-footer></app-footer>

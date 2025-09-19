@@ -13,4 +13,5 @@ protected readonly  nft = signal("NFT");
 protected readonly  nosotros = signal("NOSOTROS");
 protected readonly  registro = signal("REGISTRAR");
 protected readonly  inicio = signal("INICIAR SESIÓN");
+
 }

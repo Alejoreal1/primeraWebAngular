@@ -1,96 +1,127 @@
-
-
-
-
-<app-nav ></app-nav>
+@if (mostrarNav) {
+  <app-nav></app-nav>
+}
 
 <body>
-    <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>El Arte en la Era Digital: Una Colección de NFT</h1>
-                <p>Descubre cómo la tecnología blockchain está transformando la forma en que el arte es creado, poseído y apreciado. Bienvenido a nuestra innovadora galería de tokens no fungibles (NFT).</p>
-                <a href="#" class="cta-button">Explora la Colección</a>
-            </div>
-            
-        </section>
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>El Arte en la Era Digital: Una Colección de NFT</h1>
+        <p>
+          Descubre cómo la tecnología blockchain está transformando la forma en que el arte es creado,
+          poseído y apreciado. Bienvenido a nuestra innovadora galería de tokens no fungibles (NFT).
+        </p>
+        <a href="#" class="cta-button">Explora la Colección</a>
+      </div>
+    </section>
 
-        <section id="que-es" class="info-section">
-            <h2>¿Qué es un NFT?</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <h3>Definición Sencilla</h3>
-                    <p>Un NFT, o Token No Fungible, es un activo digital único que no puede ser replicado. Piensa en él como un certificado de autenticidad y propiedad para un archivo digital, como una imagen, un video o una pieza de música.</p>
-                </div>
-                <div class="info-card">
-                    <h3>¿Por qué son valiosos?</h3>
-                    <p>Su valor reside en su <strong>unicidad y escasez</strong>. Al igual que una obra de arte física original, un NFT garantiza que eres el único propietario de la pieza digital en la blockchain, lo que la hace coleccionable y valiosa.</p>
-                </div>
-                <div class="info-card">
-                    <h3>La Tecnología Detrás</h3>
-                    <p>Utilizamos la tecnología <strong>blockchain</strong>, una base de datos descentralizada y segura, para registrar la propiedad de cada NFT. Esto asegura la transparencia y la inmutabilidad de la información.</p>
-                </div>
-            </div>
-        </section>
+    <section id="que-es" class="info-section">
+      <h2>¿Qué es un NFT?</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Definición Sencilla</h3>
+          <p>
+            Un NFT, o Token No Fungible, es un activo digital único que no puede ser replicado. Piensa en él
+            como un certificado de autenticidad y propiedad para un archivo digital, como una imagen, un video
+            o una pieza de música.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>¿Por qué son valiosos?</h3>
+          <p>
+            Su valor reside en su <strong>unicidad y escasez</strong>. Al igual que una obra de arte física
+            original, un NFT garantiza que eres el único propietario de la pieza digital en la blockchain, lo
+            que la hace coleccionable y valiosa.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>La Tecnología Detrás</h3>
+          <p>
+            Utilizamos la tecnología <strong>blockchain</strong>, una base de datos descentralizada y segura,
+            para registrar la propiedad de cada NFT. Esto asegura la transparencia y la inmutabilidad de la
+            información.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section id="galeria" class="gallery-section">
-            <h2>Nuestra Galería Destacada</h2>
-            <p class="gallery-intro">Sumérgete en una experiencia visual única con piezas de artistas emergentes y consagrados.</p>
-            <div class="gallery-grid">
-                <div class="nft-card">
-                    <img src="img/nftf1.png" alt="Descripción de la obra 1">
-                    <div class="card-content">
-                        <h3>Control global</h3>
-                        <p class="artist-name">Por: Equipo de trabajo lingCode</p>
-                        <p class="description">Nacio de por el arduo trabajo de un prompt generado por el equipo de trabajo LingCode.</p>
-                    </div>
-                </div>
-                <div class="nft-card">
-                    <img src="img/nftf2.png" alt="Descripción de la obra 2">
-                    <div class="card-content">
-                        <h3>Patos cosmicos</h3>
-                        <p class="artist-name">Por Alejo el mejor </p>
-                        <p class="description">Una pieza que combina elementos de la naturaleza con la tecnología, creando un paisaje surrealista. evidetemente generado por la ia de google jajajaj</p>
-                    </div>
-                </div>
-                <div class="nft-card">
-                    <img src="img/LingCode.png" alt="Descripción de la obra 3">
-                    <div class="card-content">
-                        <h3>Miembros de LingCode 🐻</h3>
-                        <p class="artist-name">Por: Los ositos cariñosos </p>
-                        <p class="description">esta es una foto tomada a los miembros de trabajo de lingCode la cual destaca por su gran creatividad y colores explosivos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="galeria" class="gallery-section">
+      <h2>Nuestra Galería Destacada</h2>
+      <p class="gallery-intro">
+        Sumérgete en una experiencia visual única con piezas de artistas emergentes y consagrados.
+      </p>
+      <div class="gallery-grid">
+        <div class="nft-card">
+          <img src="img/nftf1.png" alt="Descripción de la obra 1" />
+          <div class="card-content">
+            <h3>Control global</h3>
+            <p class="artist-name">Por: Equipo de trabajo lingCode</p>
+            <p class="description">
+              Nació del arduo trabajo de un prompt generado por el equipo de trabajo LingCode.
+            </p>
+          </div>
+        </div>
+        <div class="nft-card">
+          <img src="img/nftf2.png" alt="Descripción de la obra 2" />
+          <div class="card-content">
+            <h3>Patos cósmicos</h3>
+            <p class="artist-name">Por Alejo el mejor</p>
+            <p class="description">
+              Una pieza que combina elementos de la naturaleza con la tecnología, creando un paisaje
+              surrealista, evidentemente generado por la IA de Google jajajaj.
+            </p>
+          </div>
+        </div>
+        <div class="nft-card">
+          <img src="img/LingCode.png" alt="Descripción de la obra 3" />
+          <div class="card-content">
+            <h3>Miembros de LingCode 🐻</h3>
+            <p class="artist-name">Por: Los ositos cariñosos</p>
+            <p class="description">
+              Esta es una foto tomada a los miembros de trabajo de LingCode, la cual destaca por su gran
+              creatividad y colores explosivos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="faq" class="faq-section">
-            <h2>Preguntas Frecuentes</h2>
-            <div class="faq-accordion">
-                <details>
-                    <summary>¿Cómo puedo comprar un NFT del museo?</summary>
-                    <div class="faq-answer">
-                        <p>La compra de nuestros NFTs se realiza a través de plataformas de mercado digital. 
-                            Necesitarás una billetera de criptomonedas y Ethereum para completar la transacción.</p>
-                    </div>
-                </details>
-                <details>
-                    <summary>¿Qué obtengo al comprar un NFT?</summary>
-                    <div class="faq-answer">
-                        <p>Al comprar un NFT, adquieres la propiedad digital de la obra. Esto te da el derecho de exhibirla en tu colección personal
-                             pero no los derechos de autor para reproducirla comercialmente.</p>
-                    </div>
-                </details>
-                <details>
-                    <summary>¿Son los NFTs perjudiciales para el medio ambiente?</summary>
-                    <div class="faq-answer">
-                        <p>Somos conscientes del impacto ambiental. Nuestro museo colabora
-                            con artistas que utilizan blockchains más eficientes y ecológicas,
-                             como las que operan con el mecanismo Proof of Stake (PoS), para minimizar la huella de carbono.</p>
-                    </div>
-                </details>
-            </div>
-        </section>
-    </main>
+    <section id="faq" class="faq-section">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-accordion">
+        <details>
+          <summary>¿Cómo puedo comprar un NFT del museo?</summary>
+          <div class="faq-answer">
+            <p>
+              La compra de nuestros NFTs se realiza a través de plataformas de mercado digital. Necesitarás una
+              billetera de criptomonedas y Ethereum para completar la transacción.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>¿Qué obtengo al comprar un NFT?</summary>
+          <div class="faq-answer">
+            <p>
+              Al comprar un NFT, adquieres la propiedad digital de la obra. Esto te da el derecho de exhibirla
+              en tu colección personal, pero no los derechos de autor para reproducirla comercialmente.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>¿Son los NFTs perjudiciales para el medio ambiente?</summary>
+          <div class="faq-answer">
+            <p>
+              Somos conscientes del impacto ambiental. Nuestro museo colabora con artistas que utilizan
+              blockchains más eficientes y ecológicas, como las que operan con el mecanismo Proof of Stake
+              (PoS), para minimizar la huella de carbono.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
 </body>
-<app-footer>   </app-footer>
+
+@if (mostrarFooter) {
+  <app-footer></app-footer>
+}

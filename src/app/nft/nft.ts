@@ -9,5 +9,7 @@ import { Footer } from "../shared/components/footer/footer";
   styleUrl: './nft.css'
 })
 export class Nft {
-
+ mostrarNav = true;
+  mostrarFooter = true;
+  
 }
